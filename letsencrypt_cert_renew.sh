@@ -19,7 +19,7 @@ function clientcertV2()
 
         echo "Let us upload the certs to AWS S3"
 
-	#uncomment below 2 lines to reset AWS access, to use local-user's AWS profile
+	#uncomment below 2 lines to reset AWS access and use local-user's AWS profile
         #export AWS_ACCESS_KEY_ID=""
         #export AWS_SECRET_ACCESS_KEY=""
 	${AWSBIN} s3 cp /var/tmp/${CERTNAME}.pem s3://${S3BUCKET}/certs/

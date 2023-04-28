@@ -4,7 +4,9 @@
 - We assume that the domain is hosted in AWS Route53
 - Any Linux OS to run this automation
 - Install certbot
-- AWS access to route53 from the Linux machine that runs this automation. The renew-cert automation uses S3, so corresponding AWS permissions needed.
+- AWS access to route53 from the Linux machine that runs this automation. The cert-renew automation uses S3, so corresponding AWS permissions needed.
+- Update email-addresses, s3-bucket-name and domain-name in the scripts
+- The cert-renew script uses sendmail to send email-notification
 
 ## Create certs
 [letsencrypt_firstrun](./letsencrypt_firstrun.sh)
